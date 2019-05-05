@@ -1,0 +1,15 @@
+sfdx force:auth:web:login -d -a SS_MS
+sfdx force:org:create -f MappingServiceScratchOrgv0.1.json -a SS_MS
+----------------------------------------------------------------------------------
+
+Use the link to create a dev org that can be used to create Scratch Org
+https://developer.salesforce.com/promotions/orgs/dx-signup
+
+Authorize Salesforce Org using the below command
+sfdx force:auth:web:login -d -a SS_MS
+
+Create Scratch Org with below command
+sfdx force:org:create -f MappingServiceScratchOrgv0.1.json
+
+Login to the new Scratch Org without Password (assuming the new scratch org is default Org)
+sfdx force:org:open
