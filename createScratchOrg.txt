@@ -20,6 +20,9 @@ Login to the new Scratch Org without Password (assuming the new scratch org is d
 //sfdx force:org:open
 sfdx force:org:open -u test-si862tm4fook@example.com
 
+test-si862tm4fook@example.com
+&Y-UL5uC20
+
 
 View list of Orgs within Workspace
 sfdx force:org:list --verbose
