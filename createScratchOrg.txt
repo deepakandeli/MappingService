@@ -6,7 +6,8 @@ Use the link to create a dev (hub) org that can be used to create Scratch Org
 https://developer.salesforce.com/promotions/orgs/dx-signup
 
 Authorize Salesforce Org using the below command
-sfdx force:auth:web:login -d -a MS-Scratch-Orgv0-2
+#sfdx force:auth:web:login -d -a MS-Scratch-Orgv0-2
+sfdx force:auth:web:login --setalias MS-Scratch-Orgv0-2 --instanceurl https://flow-page-3168.cs6.my.salesforce.com/ --setdefaultusername
 
 *Ensure Alias don't contain dot
 
