@@ -6,7 +6,7 @@ Use the link to create a dev (hub) org that can be used to create Scratch Org
 https://developer.salesforce.com/promotions/orgs/dx-signup
 
 Authorize Salesforce Org using the below command
-sfdx force:auth:web:login -d -a SS_MS
+sfdx force:auth:web:login -d -a MS-Scratch-Orgv0-2
 
 *Ensure Alias don't contain dot
 
@@ -26,3 +26,8 @@ test-si862tm4fook@example.com
 
 View list of Orgs within Workspace
 sfdx force:org:list --verbose
+
+sfdx force:mdapi:deploy -d .unpackaged/pre -u "MS-Scratch-Orgv0-2" --ignoreerrors --wait 3000
+
+sfdx force:mdapi:retrieve -r ./retrieve -k ./retrieve/package.xml -u test-si862tm4fook@example.com
+Expand-Archive ./retrieve/unpackaged.zip -DestinationPath ./retrieve/package-build -f
