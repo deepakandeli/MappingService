@@ -42,13 +42,13 @@ public class MappingService {
         
         // Finalize query string
         theQuery += ' FROM MappingService__mdt WHERE QualifiedApiName=:qualifiedApiName';
-        System.debug('theQuery '+theQuery);
+        //System.debug('theQuery '+theQuery);
         SObject ms=Database.query(theQuery);
 
     	String src=(String)ms.get(sourceObj);
     	String targ=(String)ms.get(targetObj);
 
-    	System.debug('src = '+src+' targ = '+targ);
+    	//System.debug('src = '+src+' targ = '+targ);
     	mapOfSourceFields.put(ObjectAPIName,src);
     	mapOfTargetFields.put(ObjectAPIName,targ);
     	
@@ -65,8 +65,8 @@ public class MappingService {
     			mapOfTargetFields.put(curField,curMapValue);
     		}
     	}
-    	System.debug('mapOfSourceFields = '+mapOfSourceFields);
-    	System.debug('mapOfTargetFields = '+mapOfTargetFields);
+    	//System.debug('mapOfSourceFields = '+mapOfSourceFields);
+    	//System.debug('mapOfTargetFields = '+mapOfTargetFields);
     }
 
     /* Final method that fetches Source object data and Target object data  */
@@ -75,14 +75,14 @@ public class MappingService {
 		for(String curSrcMapField:mapOfSourceFields.keySet()){
 			if(!curSrcMapField.equalsIgnoreCase(ObjectAPIName)){
 				String curSrcFieldName=mapOfSourceFields.get(curSrcMapField);
-				System.debug('cur Src Field Name = '+curSrcFieldName);
-				System.debug('cur Src Field Value = '+srcObj.get(curSrcFieldName));
+				//System.debug('cur Src Field Name = '+curSrcFieldName);
+				//System.debug('cur Src Field Value = '+srcObj.get(curSrcFieldName));
 
 				String curTarMapField=curSrcMapField.replace('Source','Target');
 				//System.debug('curTarMapField = '+curTarMapField);
 				if(mapOfTargetFields.containsKey(curTarMapField)){
 					String curTargFieldName=mapOfTargetFields.get(curTarMapField);
-					System.debug('cur targ Field Name = '+curTargFieldName);
+					//System.debug('cur targ Field Name = '+curTargFieldName);
 					targObj.put(curTargFieldName,srcObj.get(curSrcFieldName));
 				}
 			}
