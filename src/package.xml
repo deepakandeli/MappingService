@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
   <types>
-    <name>CustomMetadata</name>
-    <members>*</members>
-  </types>
-  <types>
-    <name>Classes</name>
-    <members>DJ_MappingService</members>
+    <name>ApexClass</name>
+    <members>TestMappingServices</members>
     <members>MappingService</members>
   </types>  
   <types>
@@ -14,8 +10,8 @@
     <members>MappingService__mdt</members>
   </types> 
     <types>
-    <name>Mapping Service Layout</name>
-    <members>Layout</members>
+    <name>Layout</name>
+    <members>MappingService__mdt-Mapping Service Layout</members>
   </types> 
   <version>44.0</version>
 </Package>
