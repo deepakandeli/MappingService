@@ -13,5 +13,9 @@
     <name>CustomObject</name>
     <members>MappingService__mdt</members>
   </types> 
+    <types>
+    <name>Mapping Service Layout</name>
+    <members>Layout</members>
+  </types> 
   <version>44.0</version>
 </Package>
