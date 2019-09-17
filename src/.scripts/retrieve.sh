@@ -7,7 +7,7 @@
 ### Run Information: This script is run manually, requires params ie;
 ###     .\scripts\retrieve.sh --scratchorgalias "dj-simplus" --manifest "./.retrieve/package-apex.xml"
 ###     .\scripts\retrieve.sh --scratchorgalias "dj-mdm" --manifest "./.retrieve/package-apex.xml"
-###     .\.scripts\retrieve.sh --scratchorgalias "dj-crm129" --manifest "package-newbuild2.xml" --copytosource
+###     .\.scripts\retrieve.sh --scratchorgalias "dj-scloud" --manifest "package-djscloud.xml" --copytosource
 
 
 #set -x
